@@ -13,16 +13,18 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Set up Ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: '3.2.4' # Set to a valid Ruby version
+    # Skip Ruby and bundler setup if you don’t need them for static files
+    # - name: Set up Ruby
+    #   uses: ruby/setup-ruby@v1
+    #   with:
+    #     ruby-version: '3.2.4'
 
-    - name: Install dependencies
-      run: bundle install
+    # Remove this if you're not using bundler
+    # - name: Install dependencies
+    #   run: bundle install
 
     - name: Build project
-      run: bundle exec rake build # Replace with your build command
+      run: echo "Building static files..." # Replace this with your actual build command for static files
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
