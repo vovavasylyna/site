@@ -13,22 +13,23 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    # Skip Ruby and bundler setup if you don’t need them for static files
-    # - name: Set up Ruby
-    #   uses: ruby/setup-ruby@v1
-    #   with:
-    #     ruby-version: '3.2.4'
+    # Set up Ruby environment (if Ruby is still required for the project)
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.2.4' # or the version you need
 
-    # Remove this if you're not using bundler
-    # - name: Install dependencies
-    #   run: bundle install
+    # Install project dependencies using bundler (if needed for the project)
+    - name: Install dependencies
+      run: bundle install
 
+    # Build the project using 'make build'
     - name: Build project
-      run: echo "Building static files..." # Replace this with your actual build command for static files
+      run: make build
 
+    # Deploy to GitHub Pages
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./build
-        publish_branch: gh-pages
