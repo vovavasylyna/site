@@ -1,0 +1,21 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    kramdown (2.4.0)
+      rexml
+    rake (13.2.1)
+    rexml (3.3.8)
+
+PLATFORMS
+  arm64-darwin-23
+  ruby
+
+DEPENDENCIES
+  kramdown
+  rake
+
+RUBY VERSION
+   ruby 3.3.3p89
+
+BUNDLED WITH
+   2.5.11
