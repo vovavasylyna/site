@@ -52,3 +52,5 @@ Replacing old heating radiators and pipes with the new ones
 
 **Sep 27, 2024**<br> 
 Leveling the floor using expanded polystyrene concrete and applying a semi-dry screed
+
+![screed](/public/images/screed.jpg)
