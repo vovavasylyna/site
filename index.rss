@@ -8,7 +8,7 @@
     <title>Volodymyr Vasylyna Website RSS Feed</title>
     <link>https://vasylyna.net</link>
     <description>The official RSS Feed for https://vasylyna.net</description>
-    <pubDate>Mon, 07 Oct 2024 20:29:13 +0000</pubDate>
+    <pubDate>Wed, 09 Oct 2024 12:29:58 +0000</pubDate>
     <item>
       <title>Kurakhove</title>
       <link>https://vasylyna.net/posts/kurakhove/</link>
@@ -1304,6 +1304,6 @@ In a New York Times column on the topic, David Brooks summarizes this reality mo
       <pubDate>Wed, 26 May 2021 12:00:00 +0000</pubDate>
       <dc:date>2021-05-26T12:00:00+00:00</dc:date>
     </item>
-    <dc:date>2024-10-07T20:29:13+00:00</dc:date>
+    <dc:date>2024-10-09T12:29:58+00:00</dc:date>
   </channel>
 </rss>
